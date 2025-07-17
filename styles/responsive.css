@@ -1,0 +1,147 @@
+@media screen and (max-width:1600px){
+    .ridoy{
+        max-width: 400px;
+        margin-top: 6vh;
+    }
+
+    .nav-link{
+        font-size: 1.3em;
+    }
+
+    .main-title{
+        font-size: 2.4em;
+    }
+
+    .main-dis{
+        font-size: 1em;
+    }
+    .main-banner{
+        margin: 0 auto;
+    }
+    header{
+        height: 100%;
+    }
+}
+
+
+@media screen and (max-width:570px){
+    
+    .dropdown-button{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    left: 90%;
+}
+
+    .navigation{
+    width: 80vw;
+    margin: 0 auto;
+    padding-top: 3%;
+}
+
+    .nav-link-container{
+        display: grid;
+        justify-items:center ;
+        grid-template-columns: 1fr;
+        row-gap: 30px; 
+        grid-template-rows: repeat(4, auto);
+        background-color: rgb(44, 69, 60);
+        height: 40%;
+        position: absolute;
+        left: 0;
+        top: 2.8%;
+        visibility: hidden;
+        display: none;
+        z-index: 100;
+        border-radius: 7px;
+        padding: 3%;
+        animation: appear-left .3s ease;
+    }
+
+    .nav-link-container.show{
+        display: block;
+        visibility: visible;
+        
+    }
+
+    .hr-nav{
+        display: block;
+        width: 90%;
+    }
+    .nav-link{
+        line-height: 20px;
+        width: 100%;
+        line-height: 60px;
+        
+    
+    }
+
+    .nav-title{
+        font-size: 2em;
+    }
+
+    .main-content{
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .main-title{
+        text-align: center;
+        font-size: 2em;
+        margin-top: 0.5%;
+    }
+
+    .main-greetings, .main-dis{
+        text-align: center;
+        width: 90vw;
+    }
+    .main-greetings-container{
+        display: flex;
+        justify-content: center;
+    }
+    .main-greetings{
+        font-size: 1em;
+    }
+
+    header{
+        height: 100%;
+        overflow: hidden;
+    }
+    .main-banner{width: 100vw;}
+
+    .main-right, .main-dis-container{
+        display: flex;
+        justify-content: center;
+    }
+    .main-dis{
+        margin-top: 6vh;
+    }
+    .hire-me{
+        display: none;
+        visibility: hidden;
+
+    }
+    .ridoy{
+        width:300px;
+        margin-top: 6vh;
+        margin-bottom: 6vh;
+    }
+
+    .achievements{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 0%;
+    margin-top: 11%;
+    }
+
+    .achievement{
+    animation: appear ease;
+    
+    animation-timeline: view();
+    animation-range: entry 5% cover 10%;
+    }
+}
+
+
