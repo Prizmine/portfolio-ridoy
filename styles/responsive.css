@@ -30,7 +30,7 @@
     display: block;
     visibility: visible;
     position: absolute;
-    left: 90%;
+    left: 85%;
 }
 
     .navigation{
@@ -45,8 +45,8 @@
         grid-template-columns: 1fr;
         row-gap: 30px; 
         grid-template-rows: repeat(4, auto);
-        background-color: rgb(44, 69, 60);
-        height: 40%;
+        background: linear-gradient(33deg , #6b9080, #a4c3b2, #cce3de, #eaf4f4, #f6fff8);
+        height: 45%;
         position: absolute;
         left: 0;
         top: 2.8%;
@@ -88,8 +88,9 @@
 
     .main-title{
         text-align: center;
-        font-size: 2em;
+        font-size: 1.3em;
         margin-top: 0.5%;
+        animation: appear-right 2s ease;
     }
 
     .main-greetings, .main-dis{
@@ -101,7 +102,7 @@
         justify-content: center;
     }
     .main-greetings{
-        font-size: 1em;
+        font-size: .6em;
     }
 
     header{
@@ -142,6 +143,33 @@
     animation-timeline: view();
     animation-range: entry 5% cover 10%;
     }
+    .close{
+        display: block;
+        position: relative;
+        margin-left: 90%;
+        margin-top: 2%;
+        border: none;
+        filter: grayscale(100%);
+        background-color: #6b908000
+
+    }
+
+    .Work-Experience{
+        max-width: 100px;
+        max-height: 100px;
+        font-size: .9em;
+    }
+
+    .ten{
+        font-size: 1.9em;
+    }
+
+    .work-container{
+        grid-template-columns: repeat(20, 5vw);
+        grid-template-rows: repeat(22, 5vw);
+    }
+
+
 }
 
 

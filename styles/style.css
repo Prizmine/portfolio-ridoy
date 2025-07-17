@@ -42,6 +42,12 @@
 }
 
 
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 /* body */
 
 header{
@@ -57,6 +63,11 @@ header{
 }
 
 .hr-nav{
+  display: none;
+}
+
+.close{
+  margin: 10px;
   display: none;
 }
 
@@ -88,7 +99,7 @@ header{
   width: 20px;
   border: none;
   border-radius: 10%;
-  background-color: #83c5be;
+  background-color: #83c5bf75;
 }
 .nav-link{
   color: rgb(126, 126, 126);
@@ -120,6 +131,7 @@ header{
 
 .main-greetings{
   font-size: 1.4em;
+  animation: appear-left 2s ease;
 }
 
 .main-title{
@@ -127,6 +139,7 @@ header{
   list-style: 2%;
   margin-top: 4%;
   font-weight: bold;
+  animation: appear-left ease 2s;
 }
 
 .main-dis{
@@ -134,6 +147,7 @@ header{
   color: #525252;
   margin-top: 5%;
   width: 22vw;
+  animation: appear-left 2s ease;
 }
 
 .hire-me{
@@ -143,6 +157,7 @@ header{
   border-radius: 5px;
   border: 3px solid rgb(126, 126, 126);
   background: linear-gradient(to right, #a4c3b200, rgba(193, 192, 192, 0));
+  animation: appear-left 2s ease;
 }
 
 .ridoy{
@@ -195,4 +210,90 @@ header{
 }
 .years{
   font-size: .4em;
+}
+
+
+/* my work */
+
+.my-work{
+  margin-top: 5%;
+}
+
+.my-work-title{
+  text-align: center;
+  font-size: 5vw;
+}
+main{
+  background-color: #a3a3a32c;
+  padding-top: 4%;
+  width: 100%;
+
+}
+.work-container{
+  display: grid;
+  grid-template-columns: repeat(20, 3.5vw);
+  grid-template-rows: repeat(22, 3.5vw);
+  justify-self: center;
+  margin-top: 4%;
+  gap: 1vw;
+}
+
+.work{
+  background: linear-gradient(45deg, red, blue, pink, violet);
+}
+
+.my-work1{
+  grid-row-start: 1;
+  grid-row-end: 6;
+  grid-column-start: 3;
+  grid-column-end: -11;
+}
+
+.my-work2{
+  grid-row-start: 1;
+  grid-row-end: 7;
+  grid-column-start: 11;
+  grid-column-end: 19;
+}
+
+.my-work3{
+  grid-row-start: 6;
+  grid-row-end: 12;
+  grid-column-start: 3;
+  grid-column-end: 11;
+}
+
+.my-work4{
+  grid-row-start: 7;
+  grid-row-end: 13;
+  grid-column-start: 11;
+  grid-column-end: 19;
+}
+
+.my-work5{
+  grid-row-start: 12;
+  grid-row-end: 18;
+  grid-column-start: 3;
+  grid-column-end: 11;
+}
+
+.my-work6{
+  grid-row-start: 13;
+  grid-row-end: 18;
+  grid-column-start: 11;
+  grid-column-end: 19;
+}
+
+.my-work7{
+  grid-row-start: 18;
+  grid-row-end: 22;
+  grid-column-start: 3;
+  grid-column-end: 11;
+}
+
+.work-explain{
+  grid-row-start: 18;
+  grid-row-end: 22;
+  grid-column-start: 11;
+  grid-column-end: 19;
 }

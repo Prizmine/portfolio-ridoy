@@ -117,3 +117,15 @@
 .appear-right{
     animation: appear-right 2s ease;
 }
+
+@keyframes close-left{
+    0%{
+
+    }
+    100%{
+        transform: scaleX(-100px);
+    }
+}
+.close-left{
+    animation: close-left .5s ease;
+}
