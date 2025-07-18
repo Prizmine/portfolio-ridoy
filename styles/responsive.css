@@ -25,12 +25,15 @@
 
 
 @media screen and (max-width:570px){
-    
+    body{
+        width: 100vw;
+        overflow-x: visible;
+    }
     .dropdown-button{
     display: block;
     visibility: visible;
     position: absolute;
-    left: 85%;
+    left: 90%;
 }
 
     .navigation{
@@ -169,7 +172,9 @@
         grid-template-rows: repeat(22, 5vw);
     }
 
-
+    .box3, .box4{
+        display: none;
+    }
 }
 
 

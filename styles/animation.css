@@ -10,7 +10,6 @@
 }
 .appear{
     animation: appear ease;
-    /* animation-duration: 1s; */
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
@@ -128,4 +127,141 @@
 }
 .close-left{
     animation: close-left .5s ease;
+}
+
+
+@keyframes roll1{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        transform: rotate(0deg);
+        scale: 1;
+        top: 0;
+        left: 0;
+    }
+    50%{
+        scale: 50%;
+        transform: rotate(250deg);
+        scale: 50%;
+        
+    }
+    100%{
+        transform: rotate(360deg);
+        scale: 50%;
+        border-radius: 360px;  
+        
+    }
+
+}
+
+
+.roll1{
+    animation: roll1 3s ease-in-out;
+    animation-iteration-count: infinite;
+    /* animation-timing-function: inherit; */
+    animation-direction: alternate;
+}
+
+@keyframes roll2{
+    0%{
+        top: 0;
+        right: 0;
+    }
+    25%{
+        transform: rotate(0deg);
+        scale: 1;
+        top: 0;
+        right: 0;
+    }
+    50%{
+        scale: 50%;
+        transform: rotate(250deg);
+        scale: 50%;
+        
+    }
+    100%{
+        transform: rotate(360deg);
+        scale: 50%;
+        border-radius: 360px;  
+        
+    }
+
+}
+
+
+.roll2{
+    animation: roll2 3s ease-in-out;
+    animation-iteration-count: infinite;
+    /* animation-timing-function: inherit; */
+    animation-direction: alternate;
+}
+
+@keyframes roll3{
+    0%{
+        top: 87%;
+        left: 0;
+    }
+    25%{
+        transform: rotate(0deg);
+        scale: 1;
+        top: 87%;
+        right: 0;
+    }
+    50%{
+        scale: 50%;
+        transform: rotate(250deg);
+        scale: 50%;
+        
+    }
+    100%{
+        transform: rotate(360deg);
+        scale: 50%;
+        border-radius: 360px;  
+        
+    }
+
+}
+
+
+.roll3{
+    animation: roll3 3s ease-in-out;
+    animation-iteration-count: infinite;
+    /* animation-timing-function: inherit; */
+    animation-direction: alternate;
+}
+
+@keyframes roll4{
+    0%{
+        top: 87%;
+        right: 0;
+    }
+    25%{
+        transform: rotate(0deg);
+        scale: 1;
+        top: 87%;
+        right: 0;
+    }
+    50%{
+        scale: 50%;
+        transform: rotate(250deg);
+        scale: 50%;
+        
+    }
+    100%{
+        transform: rotate(360deg);
+        scale: 50%;
+        border-radius: 360px;  
+        
+    }
+
+}
+
+
+.roll4{
+    animation: roll4 3s ease-in-out;
+    animation-iteration-count: infinite;
+    /* animation-timing-function: inherit; */
+    animation-direction: alternate;
 }

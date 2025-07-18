@@ -2,6 +2,25 @@
     margin: 0;
     padding: 0;
 }
+html{
+  width: 100%;
+}
+
+ body {
+  width: 100%;
+  overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+header{
+  position: relative;
+
+}
 
 /* fonts */
 .fjalla {
@@ -50,6 +69,56 @@
 
 /* body */
 
+
+.box1{
+  
+  position: absolute;
+  width: 7vw;
+  height: 7vw;
+  background-color: #a4c3b27e;
+  border-radius: 50px 100px 360px 100px;
+  z-index: 0;
+  top: 1%;
+  left: 1.5%;
+}
+
+.box2{
+  position: absolute;
+  width: 7vw;
+  height: 7vw;
+  background-color: #e7eeea7d;
+  border-radius: 100px 50px 100px 360px ;
+  top: 1%;
+  right: 1.5%;
+  z-index: 0;
+}
+
+.box3{
+  position: absolute;
+  width: 7vw;
+  height: 7vw;
+  background-color: #9bbfb06f;
+  border-radius: 100px 360px 100px 50px;
+  top: 87%;
+  left: 1.5%;
+  z-index: 0;
+}
+
+
+.box4{
+  position: absolute;
+  width: 7vw;
+  height: 7vw;
+  background-color: #e7eeea7d;
+  border-radius: 360px 100px 100px 100px;
+  top: 87%;
+  
+  right: 1.5%;
+  z-index: 0;
+}
+
+
+/* header */
 header{
   height: 100%;
   width: 100%;
@@ -272,7 +341,7 @@ main{
 
 .my-work5{
   grid-row-start: 12;
-  grid-row-end: 18;
+  grid-row-end: 17;
   grid-column-start: 3;
   grid-column-end: 11;
 }
@@ -285,7 +354,7 @@ main{
 }
 
 .my-work7{
-  grid-row-start: 18;
+  grid-row-start: 17;
   grid-row-end: 22;
   grid-column-start: 3;
   grid-column-end: 11;
