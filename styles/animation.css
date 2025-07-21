@@ -67,11 +67,16 @@
 @keyframes zig{
     0%{
         transform: rotate(0);
+        transform: translateX(-600px);
         opacity: 0;
+    }
+    25%{
+        transform: translateX(0px);
     }
     50%{
         opacity: 1;
         transform: rotate(15deg);
+        
     }
     75%{
         
@@ -79,6 +84,7 @@
     }
     100%{
         transform: rotate(360deg);
+        
     }
 }
 .zig{
@@ -265,3 +271,45 @@
     /* animation-timing-function: inherit; */
     animation-direction: alternate;
 }
+
+
+.nav-link:hover{
+    
+    color: white;
+    transition: .5s ease;
+    background-color: #6b9080;
+}
+
+
+@keyframes slide {
+    from{
+        left:100%;
+    }
+    to{
+        left: calc(360px * -1);
+    }
+
+}
+
+@keyframes slide2{
+    0%{
+
+    }
+    100%{
+        transform: translateX(-3220.30px);
+    }
+}
+
+
+
+
+.review-list:hover .review{
+    animation-play-state: paused;
+}
+
+.review-list:hover{
+    animation-play-state: paused;
+}
+
+
+
